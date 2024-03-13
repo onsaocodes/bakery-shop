@@ -18,13 +18,32 @@
   }
 
   &__subtitle {
+    padding-bottom: 0.5rem;
     &-text {
       font-weight: 100;
     }
   }
+
+  &__btn {
+    &-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    &-text {
+      background: #dda15e;
+      text-transform: uppercase;
+      padding: 0.6rem;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
   &__image {
     &-file {
-      height: 45vh;
+      padding-top: 0.5rem;
+      justify-self: center;
+      align-self: center;
+      height: 40vh;
       width: 45vw;
     }
   }

@@ -1,5 +1,6 @@
 import "./Hero.scss";
 import heroImage from "../../assets/images/hero-image.png";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -10,11 +11,16 @@ function Hero() {
         </div>
         <div className="hero__subtitle">
           <p className="hero__subtitle-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
+        <div className="hero__btn">
+          <Link className="hero__btn-link" to="">
+            <p className="hero__btn-text">shop now</p>
+          </Link>
+        </div>
       </div>
+
       <div className="hero__image">
         <img
           className="hero__image-file"
