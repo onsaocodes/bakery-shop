@@ -20,7 +20,6 @@ function Hero() {
           </Link>
         </div>
       </div>
-
       <div className="hero__image">
         <img
           className="hero__image-file"

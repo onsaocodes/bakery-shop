@@ -1,7 +1,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .nav {
-  padding: 1rem;
+  padding: 2.5rem;
   background-color: #177e89;
   color: white;
   @include tablet {
@@ -40,6 +40,7 @@
     }
 
     @include desktop {
+      gap: 2rem;
       font-size: inherit;
     }
 
@@ -47,7 +48,9 @@
       align-self: center;
     }
     &-item:hover {
-      color: #dda15e;
+      @include desktop {
+        color: #dda15e;
+      }
     }
   }
 }
