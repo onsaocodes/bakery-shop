@@ -1,13 +1,23 @@
-@use "../../" as *;
+@use "../../styles/partials/mixins" as *;
 
 .nav {
   padding: 1rem;
   background-color: #177e89;
   color: white;
-  display: flex;
-  justify-content: space-between;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    padding: 5rem;
+    font-size: 2rem;
+  }
 
   &__logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.3rem;
     &-link {
       text-decoration: none;
       color: inherit;
@@ -18,10 +28,21 @@
   }
   &__list {
     display: flex;
-    gap: 0.6rem;
+    flex-direction: column;
+    justify-content: center;
     text-transform: capitalize;
     list-style: none;
-    font-size: 0.9rem;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    @include desktop {
+      font-size: inherit;
+    }
+
     &-item {
       align-self: center;
     }
