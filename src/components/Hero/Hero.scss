@@ -1,2 +1,31 @@
 .hero {
+  padding: 2rem 3rem;
+  background-color: #177e89;
+  color: white;
+  display: flex;
+  gap: 3rem;
+
+  &__main-text {
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__title {
+    &-text {
+      padding-bottom: 0.3rem;
+      font-style: italic;
+    }
+  }
+
+  &__subtitle {
+    &-text {
+      font-weight: 100;
+    }
+  }
+  &__image {
+    &-file {
+      height: 45vh;
+      width: 45vw;
+    }
+  }
 }
