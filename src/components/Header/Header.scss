@@ -1,0 +1,30 @@
+.nav {
+  padding: 1rem;
+  background-color: #177e89;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    &-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    &-text {
+      font-style: italic;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 0.6rem;
+    text-transform: capitalize;
+    list-style: none;
+    font-size: 0.9rem;
+    &-item {
+      align-self: center;
+    }
+    &-item:hover {
+      color: #dda15e;
+    }
+  }
+}

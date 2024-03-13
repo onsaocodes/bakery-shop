@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav>
+    <nav className="nav">
       <div className="nav__logo">
         <Link to="/" className="nav__logo-link">
-          <h3 className="nav__logo-text">the bakery.</h3>
+          <h3 className="nav__logo-text">bakers bake.</h3>
         </Link>
       </div>
       <ul className="nav__list">
