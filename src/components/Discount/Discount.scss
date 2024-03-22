@@ -1,0 +1,30 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.discount {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    padding: 4rem 5rem;
+  }
+
+  @include desktop {
+    padding: 1rem 10rem;
+  }
+
+  &__text {
+    background-color: gray;
+    padding: 1rem;
+    color: white;
+
+    &--capitalise {
+      text-transform: capitalize;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+}
