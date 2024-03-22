@@ -1,9 +1,10 @@
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
 
 .hero {
   padding: 2rem 3rem;
-  background-color: #177e89;
-  color: white;
+  background-color: $primary-color;
+  color: $primary-text;
   display: flex;
   gap: 3rem;
 
@@ -41,7 +42,7 @@
       color: inherit;
     }
     &-text {
-      background: #dda15e;
+      background: $secondary-color;
       text-transform: uppercase;
       padding: 0.6rem;
       text-align: center;
@@ -63,7 +64,6 @@
       width: 100%;
       @include tablet {
         padding-top: 0.5rem;
-        width: 100%;
       }
     }
   }

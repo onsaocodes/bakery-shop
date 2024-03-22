@@ -1,9 +1,10 @@
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
 
 .nav {
   padding: 2.5rem;
-  background-color: #177e89;
-  color: white;
+  background-color: $primary-color;
+  color: $primary-text;
   @include tablet {
     display: flex;
     justify-content: space-between;
@@ -49,7 +50,7 @@
     }
     &-item:hover {
       @include desktop {
-        color: #dda15e;
+        color: $secondary-color;
       }
     }
   }

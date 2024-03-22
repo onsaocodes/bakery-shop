@@ -1,0 +1,23 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image": "",
+            "title" :"Reusable Containers",
+            "price" : "£19.99"
+        },
+        {
+            "id": 2,
+            "image": "",
+            "title" :"Coffee Cup",
+            "price" : "£12.99"
+        },
+        {
+            "id": 3,
+            "image": "",
+            "title" :"Reusable Cutlery",
+            "price" : "£9.99"
+        }
+    ]
+}
+
