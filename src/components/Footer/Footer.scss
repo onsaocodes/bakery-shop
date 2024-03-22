@@ -1,0 +1,38 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.footer {
+  padding: 2rem 3rem;
+  background-color: $primary-color;
+  color: $primary-text;
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+
+  @include tablet {
+    padding: 1rem 5rem;
+  }
+
+  @include desktop {
+    padding: 1rem 10rem;
+  }
+
+  &__address,
+  &__hours,
+  &__social {
+    &-title {
+      text-transform: capitalize;
+      padding-bottom: 1rem;
+    }
+    &-text,
+    &-city {
+      font-size: 0.55rem;
+    }
+  }
+
+  &__hours {
+    &-day {
+      font-weight: 700;
+    }
+  }
+}

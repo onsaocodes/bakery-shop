@@ -1,6 +1,7 @@
 import Hero from "../../components/Hero/Hero";
 import Products from "../../components/Products/Products";
 import Discount from "../../components/Discount/Discount";
+import Footer from "../../components/Footer/Footer";
 
 function LandingPage() {
   return (
@@ -8,6 +9,7 @@ function LandingPage() {
       <Hero />
       <Products />
       <Discount />
+      <Footer />
     </>
   );
 }
